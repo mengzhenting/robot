@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+html, body {
+    height: 90%;
+    /* overflow: hidden; */
+}
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    /* calc(px - %) 注意空格 */
+    height: calc(100% - 2px);
+    background-color: #eee;
+    position: relative;
+}
+.wrapper .header .name {
+    background-color: grey;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.inp {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 0;
+    text-align: center;
+    background-color: #ddd;
+}
+.inp #inp-box {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 500px;
+}
+.inp #submit {
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+.inp #submit:hover {
+    background-color: #aaa;
+}
+.container {
+    padding: 10px;
+    height: calc(100% - 40px - 50px - 20px);
+    overflow: auto;
+}
+.mine {
+    float: right;
+    width: 500px;
+}
+.robot {
+    float: left;
+    width: 500px;
+}
+.mine .avitor {
+    float: right;
+    background-image: url('../image/3.png');
+}
+.mine .text {
+    float: right;
+    background-color: greenyellow;
+}
+.robot .avitor {
+    float: left;
+    background-image: url('../image/dog1.jpg');
+}
+.robot .text {
+    float: left;
+    background-color: #fff;
+}
+.avitor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text {
+    max-width: 250px;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 3px;
+    line-height: 30px;
+}
